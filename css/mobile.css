@@ -1,0 +1,645 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: Century, Times New Roman, Georgia, Serif;
+  color: #000;
+  background: #F0FFFF;}
+
+p
+{ padding: 0 0 10px 0;
+  line-height: 1.5em;
+  color: #000;
+  text-align: justify;}
+
+img
+{ border: 0;
+  width: 100%;}
+
+h1, h2, h3, h4, h5, h6
+{ color: #000000;
+  /*text-shadow: 0px 1px 0px #FFF;*/
+  letter-spacing: -1px;
+  margin: 0 0 0px 0;}
+
+h2
+{ }
+
+h3
+{ color: #000;
+  /*text-shadow: 1px 1px #000;*/}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 0px 0;
+  color: #FFF;
+  line-height: 1.5em;}
+
+ul
+{ margin: 0px 0 0px 30px;
+  line-height: 1.7em;
+  font-style: normal;}
+
+#main, #header, #site_content, .about, #footer, .meet, #photos_container
+{ margin-left: auto;
+  margin-right: auto;}
+
+#main
+{ background: #FFF;}
+
+/*Header and title*/
+
+#header
+{ height: auto;
+  position: relative;
+  top: 0px;
+  overflow: auto;
+  width: 100%;
+  background: rgba(0,33,71,1.0);
+  z-index: 1;}
+  
+#title
+{ height: auto;
+  width: 200px;
+  background: transparent;
+  float: left;
+  padding: 0px 0px 0 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#menubar
+{ display: none;}
+
+#dropmenu
+{ margin:0;}
+
+#dropmenu li
+{ padding: 0px 0px 0 0px;
+  float: none;
+  clear: both;
+  list-style: none;
+  margin: 0px 0 0px 0;
+  display: block;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #FFF;
+  }
+
+#dropmenu li a
+{ float: none;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 60px;
+  vertical-align: center;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  display:block;
+  font: 3em Century, Times New Roman, Georgia, Serif;
+  width: 100%;
+  margin: 0px 0 0px 0px;
+  padding: 20px 0px 20px 0px;}
+
+#dropmenu li.current > a
+{ color: #B8E6E6;
+  text-shadow: none;}
+
+#dropmenu li:hover > a
+{ color: #B8E6E6;
+  text-shadow: none;}
+
+#menubutton
+{
+  height: auto;
+  width: 120px;
+  background: transparent;
+  float: right;
+  margin: 20px 20px 15px 0px;
+}
+
+#dropdown{
+  width: 100%;
+  background: rgba(0,33,71,1.0);
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+/*Main site content*/
+
+#site_content
+{ 
+  position: relative;
+  width:100%;
+  height:auto;
+  top: 0px;
+  margin-bottom: 30px;
+  background: #FFF;
+  overflow: hidden;
+}
+
+/*Hide the slide show*/
+#slideshowcontainer{
+  display: none;
+}
+
+/*Show an image in place of the slide show for the mobile app*/
+.mobilehomeimage{
+  display: block;
+  width: 100%;
+}
+
+/*Fonts to use for the main content*/
+#site_content h1
+{
+  font: 400 normal 4em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: center;
+}
+
+#site_content h2
+{
+  font: 400 normal 3em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: center;
+}
+
+#site_content p
+{
+  font: 300 normal 2em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: justify;
+}
+
+ul#aboutlist li{
+  font: 300 normal 2em 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+ul#aboutlist li a{
+  text-decoration: none;
+  cursor: pointer;
+  /*color: #002147;*/
+}
+
+/*About and meet section*/
+.about, .meet
+{ margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  overflow: hidden;
+  height: auto;
+}
+
+.about h1, .meet h1
+{ font: normal 350% Century, Times New Roman, Georgia, Serif;
+  color: #002147;
+  text-align: center;
+}
+
+.about p, .meet p
+{ font: normal 250% Century, Times New Roman, Georgia, Serif;
+  color: #002147;
+  text-align: justfy;
+}
+
+.homephotoscontainer{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.homephotoscontainer a{
+  font: 300 normal 150% 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+.homephotowrapper{
+  margin-bottom: 20px;
+}
+
+.homephotowrapper a{
+  font: 300 normal 3em 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+/*Meet the team photos*/
+#photos_container
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.photo
+{
+  width: 80%;
+  background: transparent;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+#sidebar{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+	
+#sidecontent{
+  display: inline-block;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+#sidecontent h1
+{ font: 400 normal 4em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;}
+
+#sidecontent h2
+{ font: 300 normal 3.5em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;
+  margin-bottom: 0px;}
+
+#sidecontent h6
+{ font: 300 italic 3em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;}
+
+#sidecontent p
+{ font: 300 normal 2em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: justfy;}
+
+ul#sidemenu
+{ margin:0;}
+
+ul#sidemenu li
+{ padding: 0;
+  list-style: none;
+  margin: 0;
+  display: inline;
+  background: transparent;
+  height: 80px;}
+
+ul#sidemenu li a
+{ font: 3em Century, Times New Roman, Georgia, Serif;
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: calc(100% - 10px);
+  height: 80px;
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  /*background: url(../images/sidebutton.png);
+  background-size: 160% 200%;*/
+  border-bottom: solid thin #002147;
+  text-align: center;
+  color: #002147;
+  text-decoration: none;
+  line-height: 80px;
+  vertical-align: center;
+  cursor: pointer;
+  display:inline-block;}
+
+ul#sidemenu li.current > a
+{ background-position: 0px -80px;}
+
+.profile{
+  /*display: inline-block;*/
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  height: auto;
+  background: transparent;
+  overflow:hidden;
+  cursor: pointer;
+}
+
+.photo > img{
+  width: 100%;
+  height: auto;
+}
+
+.text
+{
+  display: inline-block;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: auto;
+  overflow: hidden;
+  border-bottom: thin solid #002147;
+}
+
+.text .extra
+{
+  display: none;
+}
+
+#application_form, #create_form{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#client_application_form{
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.basic-grey{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 10px 15px 25px 15px;
+  font: 400 normal 1.3em 'Open Sans', sans-serif;
+  color: #002147;
+  border: 1px solid #000;
+}
+
+.basic-grey h1{
+  padding: 0px 0px 10px 40px;
+  display: block;
+  /*border-bottom: 1px solid #E4E4E4;*/
+  margin: -10px -15px 30px -10px;
+}
+
+.basic-grey h1>span{
+  display: block;
+  font-weight: 300;
+  font-size: 0.6em;
+}
+
+#applicationform label, #clientapplicationform label, #create_form label{
+  display: block;
+  margin: 0px 0px 0px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  text-align: left;
+  padding: 0px;
+  background: transparent;
+  height: 80px;
+  line-height: 80px;
+  font-size: 2em;
+}
+
+#applicationform label.error, #clientapplicationform label.error, #create_form label.error{
+  color:red;
+  width: 99%;
+  display: block;
+  background: transparent;
+  margin-top: 0px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#applicationform input.error, #clientapplicationform input.error, #create_form input.error{
+  border: 1px solid red;
+}
+
+#applicationform textarea.error, #clientapplicationform textarea.error, #create_form textarea.error{
+  border: 1px solid red;
+}
+
+#submit{
+  margin-left: 0px;
+}
+
+#success, #failure, #success2, #failure2{
+  display: none;
+}
+
+#success span, #failure span, #success2 span, #failure2 span{
+  display: block;
+  width: 100%;
+}
+
+.basic-grey label{
+  display: block;
+  margin: 0px;
+}
+
+.basic-grey label>span{
+  float: left;
+  width: 100%;
+  text-align: right;
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 5px;
+  background: transparent;
+  line-height: 42px;
+}
+
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="password"], .basic-grey textarea, .basic-grey select, .basic-grey checkbox{
+  display: inline-block;
+  border: 1px solid #DADADA;
+  color: #002147;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  outline: 0 none;
+  padding-left: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -moz-calc(100% - 15px);
+  width: -webkit-calc(100% - 15px);
+  width: -o-calc(100% - 15px);
+  width: calc(100% - 15px);
+  font: 300 normal 2em 'Open Sans', sans-serif;
+  line-height: 80px;
+  vertical-align: top;
+}
+
+#terms p{
+  font-size: 2em;
+}
+
+.basic-grey textarea{
+  padding: 8px 3px 3px 10px;
+}
+
+.basic-grey select{
+  background: #FFF;
+  text-indent: -1px;
+  text-overflow: '';
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+.basic-grey textarea{
+  height: 400px;
+}
+
+.basic-grey .button{
+  background: #002147;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  cursor: pointer;
+  font: 300 normal 2em 'Open Sans', sans-serif;
+}
+
+.basic-grey .button:hover {
+  color: #B8E6E6;
+}
+
+#mapcontainer{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 5px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 99.5%; 
+  border-collapse: collapse;
+}
+
+th { 
+  background: #FFF; 
+  color: #002147; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center;
+  color: #002147; 
+  height: auto;
+}
+
+td {
+  width: 15%;
+}
+
+#subject, #subject1, #subject2, #subject3, #subject4, #subject5{
+  border: 1px solid #ccc;
+  background: #FFF;
+  /*text-indent: 0.01px;
+  text-overflow: '';*/
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Footer*/
+#footer
+{
+  position: relative;
+  top:0px;
+  width: 100%;
+  background: url(../images/background.png);
+  margin: 0px;
+  overflow: hidden;
+}
+
+#footercontainer{
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+#footercontainer p, h1, h2{
+  color: #FFF;
+  padding-bottom: 5px;
+  background: transparent;
+}
+
+#footercontainer h1{
+  font-size: 300%;
+}
+
+#footercontainer h2{
+  font: 300 normal 200% 'Open Sans', sans-serif;
+}
+
+#footercontainer p{
+  font: 300 normal 150% 'Open Sans', sans-serif;
+}
+
+.footersection{
+  width: 100%;
+  background: transparent;
+  float: left;
+  overflow: hidden;
+}
+
+.footerbuttons{
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  background: transparent;
+}
+
+#facebook{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 1.5%;
+  vertical-align: top;
+  background: url(../images/FacebookSmall.png);
+  background-position: 0px 0px;
+  background-size: 200% 80px;
+  cursor: pointer;
+}
+
+#googleplus{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 1.5%;
+  vertical-align: top;
+  background: url(../images/GooglePlusSmall.png);
+  background-position: 0px 0px;
+  background-size: 200% 80px;
+  cursor: pointer;
+}
+
+#linkedin{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 1.5%;
+  vertical-align: top;
+  background: url(../images/LinkedInSmall.png);
+  background-position: 0px 0px;
+  background-size: 200% 80px;
+  cursor: pointer;
+}
