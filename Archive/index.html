@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Arlen Education</title>
+    <meta name="description" content="Arlen Education" />
+    <meta name="keywords" content="Arlen Education Tutoring" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="user-scalable=no"/>
+    <link rel="stylesheet" media="screen and (min-device-width: 668px)" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-device-width: 667px)" type="text/css" href="css/mobile.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script type="text/javascript" src="js/main_slider.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="title">
+                <a href = "index.html"><img src="images/logo.png"/></a>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <li class="current"><a href = "index.html">Home</a></li>
+                    <li><a href = "aboutus.html">About Us</a></li>
+                    <li><a>Tutoring</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Login</a></li>
+                </ul>
+            </div>
+                      
+            <div id = "menubutton">
+            	<img src="images/menuwhite.png" onmouseover="this.src='images/menublue.png'" onmouseout="this.src='images/menuwhite.png'"/>
+            </div>
+            
+        </div>
+        
+        <div id="dropdown">
+        	<ul id="dropmenu">
+                <li><a href = "aboutus.html">About Us</a></li>
+                <li><a>Tutoring</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>Login</a></li>
+            </ul>
+        </div>
+		
+		<!-- Content -->
+        <div id="site_content">
+            
+            <!-- Jssor Slider Begin -->
+    		<!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    		<div id="slider1_container" class = "slider_container">
+        		<!-- Loading Screen -->
+        		<div id = "loading" u="loading">
+            		<div class = "loading1"> </div>
+            		<div style="position: absolute; display: block; no-repeat center center;
+                		top: 0px; left: 0px; width: 100%; height: 100%;">
+            		</div>
+        		</div>
+        		
+        		<!-- Slides Container -->
+        		<div id="slides_container" class="slides_container" u="slides">
+            		<div>
+                		<a href="http://www.w3schools.com"><img u="image" src="images/WellingtonCollege.jpg" /></a>
+            		</div>
+            		<div>
+                		<a href="https://www.bbc.co.uk"><img u="image" src="images/prepschool.jpg" />
+                		<div style="position: absolute; width: 480px; height: 120px; bottom: 30px; left: 30px; padding: 5px;
+                    		text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        	color: #FFFFFF;">Prep School Kids
+                		</div></a>
+            		</div>
+            		<div>
+                		<img u="image" src="images/university.jpg" />
+            		</div>
+        		</div>
+                
+        		<!--#region Bullet Navigator Skin Begin -->
+       			<!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html-->
+        		<style>
+            		.jssorb21 {
+                		position: absolute;
+            		}
+            		
+            		.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                		position: absolute;
+                		width: 19px;
+                		height: 19px;
+                		text-align: center;
+                		line-height: 19px;
+                		color: white;
+                		font-size: 12px;
+                		background: url(img/b14.png) no-repeat;
+                		overflow: hidden;
+                		cursor: pointer;
+            		}
+            		.jssorb21 div { background-position: -5px -5px; }
+            		.jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            		.jssorb21 .av { background-position: -65px -5px; }
+            		.jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        		</style>
+        		
+        		<!-- bullet navigator container -->
+        		<div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+            		<!-- bullet navigator item prototype -->
+            		<div u="prototype"></div>
+        		</div>
+        		<!--#endregion Bullet Navigator Skin End -->
+        
+        		<!--#region Arrow Navigator Skin Begin -->
+        		<!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        		<style>
+            		.jssora21l, .jssora21r {
+                		display: block;
+                		position: absolute;
+                		/* size of arrow element */
+                		width: 55px;
+                		height: 55px;
+                		cursor: pointer;
+                		background: url(img/a19.png) center center no-repeat;
+                		overflow: hidden;
+            		}
+            		.jssora21l { background-position: -3px -33px; }
+            		.jssora21r { background-position: -63px -33px; }
+            		.jssora21l:hover { background-position: -123px -33px; }
+            		.jssora21r:hover { background-position: -183px -33px; }
+            		.jssora21l.jssora21ldn { background-position: -243px -33px; }
+            		.jssora21r.jssora21rdn { background-position: -303px -33px; }
+        		</style>
+        		
+        		<!-- Arrow Left -->
+        		<span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+        		</span>
+        
+        		<!-- Arrow Right -->
+        		<span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+        		</span>
+        
+    		</div>
+    		<!-- Jssor Slider End -->
+			
+			<img class="frontimage" u="image" src="images/university.jpg" />
+			
+            <!-- Blurb -->
+            <div class="about">
+            	<h1>About Us</h1>
+            	<p>Arlen Education is run by Oxbridge educated professional teachers who currently teach at some of the country’s leading independent schools and therefore fully understand the rigours of the current system.</p>
+            	<p>We know education is about supporting students to do their best, helping foster a sense of independence but, most importantly, it’s about providing opportunities in an increasingly competitive world.</p>
+            </div>
+        </div>
+        
+        <div id="footer">
+        	<div id = "footercontainer">
+        		<div class = "footersection">
+        			<h1>Arlen Education</h1>
+        			<p>Keiron's House, A Farm<br>Up North,NF1 LOH</p>
+        			<p>Email: enquiries@arleneducation.com</p>
+        			<p>Phone: +441892203404</p>
+        		</div>
+        		<div class = "footersection">
+        			<h2>Contact Us</h2>
+        		</div>
+        		<div class = "footersection">
+        			<h2>About Us</h2>
+        			<p>Copyright 2015, Arlen Education Ltd.<br>Registered Office:Keiron's House<br>Registered Company No: 019203309</p>
+        		</div>
+        	</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

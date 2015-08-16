@@ -1,0 +1,1120 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal 0.8em Century, Times New Roman, Georgia, Serif;
+  color: #000;
+  background: #F0FFFF;}
+
+p
+{ padding: 0 0 10px 0;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: #000;
+  text-align: justify;}
+
+img
+{ border: 0;
+  width: 100%;}
+
+h1, h2, h3, h4, h5, h6
+{ font: normal 1.75em Century, Times New Roman, Georgia, Serif;
+  color: #000000;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;}
+
+h2
+{ font: normal 1.65em Century, Times New Roman, Georgia, Serif;}
+
+h3
+{ font: bold 1.5em Century, Times New Roman, Georgia, Serif;
+  color: #000;}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 0px 0;
+  font: normal 1.3em Century, Times New Roman, Georgia, Serif;
+  color: #FFF;
+  line-height: 1.5em;}
+
+h5, h6
+{ font: normal 1em Century, Times New Roman, Georgia, Serif;
+  color: #888;
+  padding-bottom: 15px;}
+
+ul
+{ font: 400 normal 2.5em 'Open Sans', sans-serif;
+  margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;}
+
+#main, #header, #site_content, .about, #footer, .meet, #photos_container, #footercontainer, #mainfrontcontent
+{ margin-left: auto;
+  margin-right: auto;}
+
+#main
+{ background: #FFFFFF;}
+
+/*Header, title and menu*/
+#header
+{ height: 50px;
+  position: fixed;
+  top: 0px;
+  overflow: auto;
+  width: 100%;
+  background: rgba(0,33,71,0.9);
+  z-index: 1;
+  overflow: hidden;}
+
+#title
+{ height: 50px;
+  line-height: 50px;
+  width: 100px;
+  background: transparent;
+  float: left;
+  padding: 5px 0 0 20px;}
+
+#title h1
+{
+  font: normal 3em Century, Times New Roman, Georgia, Serif;
+  color: #FFF;
+}
+
+#title img
+{
+  width: 100%;
+}
+
+#menubar
+{ height: 50px;
+  width: auto;
+  float: right;
+  margin-top: 0px;
+  margin-right: 10px;
+  background: transparent;
+  /*list-style: none;*/
+  overflow: hidden;
+}
+
+ul#menu, #dropmenu
+{ margin:0;}
+
+ul#menu li, #dropmenu li
+{ padding: 0;
+  list-style: none;
+  margin: 4px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a, #dropmenu li a
+{ font: 1.1em Century, Times New Roman, Georgia, Serif;*/
+  /*font: 300 normal 160% 'Open Sans', sans-serif;*/
+  height: 50px;
+  margin: 0px 0 0 20px;
+  padding: 0px 10px 0 10px;
+  background: transparent;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 50px;
+  vertical-align: center;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  display:inline-block;}
+
+ul#menu li.current > a, #dropmenu li.current > a
+{ color: #B8E6FF;
+  text-shadow: none;}
+
+ul#menu li:hover > a, #dropmenu li:hover > a
+{ color: #B8E6E6;
+  text-shadow: none;}
+  
+ul#dropmenu li a
+{ /*font: 1.1em Century, Times New Roman, Georgia, Serif;;
+  height: 50px;
+  width: 200px;
+  margin: 0px 0 5px 0px;
+  padding: 0px 0px 0px 0px;
+  line-height: 50px;*/}
+
+#dropdown{
+  display: none;
+  width: 100%;
+}
+
+ul#aboutlist li{
+  font: 300 normal 1.5em 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+ul#aboutlist li a{
+  text-decoration: none;
+  cursor: pointer;
+  /*color: #002147;*/
+}
+
+#menubutton
+{
+  display: none;
+  height:30px;
+  width: 36px;
+  background: transparent;
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+/*Main content*/
+#site_content
+{ 
+  width:100%;
+  /*min-height:500px;*/
+  top: 0px;
+  margin-bottom: 0px;
+  background: #FFF;}
+
+#site_content h1
+{
+  font: 400 normal 2.5em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: center;
+}
+
+#site_content p
+{
+  font: 300 normal 1.5em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: justify;
+}
+
+/*home slide show container*/
+#slideshowcontainer{
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  height: auto;
+  background: transparent}
+
+#slideshowcontainer div{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;}
+
+#slideshowcontainer h1{
+  font: normal 2.5em Century, Times New Roman, Georgia, Serif;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;}
+
+#nextbutton, #previousbutton{
+  width: 55px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  background: url(../img/a21.png) center center no-repeat;
+  background-position: -303px -33px;
+  cursor: pointer;}
+
+#previousbutton{
+  background-position: -243px -33px;}
+
+#nextbutton:hover{
+  background-position: -63px -33px;}
+
+#previousbutton:hover{
+  background-position: -3px -33px;}
+
+#nextbutton:active{
+  background-position: -183px -33px;}
+
+#previousbutton:active{
+  background-position: -123px -33px;}
+
+/*Hide the mobile image*/
+.mobilehomeimage{
+  display: none;
+}
+
+#mainfrontcontent{
+  width: 1200px;
+  height: auto;
+  background: #FFF;
+  position: relative;
+  margin-top: 0px;
+  background: transparent;
+}
+
+#application_form, #create_form, #forgot_form{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login_form{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginform{
+  margin-bottom: 0px;
+}
+
+#client_application_form, #selectform{
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.basic-grey{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 10px 15px 25px 15px;
+  font: 400 normal 1.3em 'Open Sans', sans-serif;
+  color: #002147;
+  border: 1px solid #000;
+}
+
+.basic-grey h1{
+  padding: 0px 0px 10px 40px;
+  display: block;
+  /*border-bottom: 1px solid #E4E4E4;*/
+  margin: -10px -15px 30px -10px;
+}
+
+.basic-grey h1>span{
+  display: block;
+  font-weight: 300;
+  font-size: 0.6em;
+}
+
+#applicationform label, #clientapplicationform label, #create_form label, #login_form label{
+  display: inline-block;
+  margin: 20px 0px 0px 0px;
+  width: 200px;
+  text-align: right;
+  padding: 0px;
+  background: transparent;
+  height: 42px;
+  line-height: 42px;
+}
+
+#forgot_form label{
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  background: transparent;
+  height: 42px;
+  line-height: 42px;
+}
+
+#login_form label{
+  width: 100px;
+}
+
+#applicationform label.error, #clientapplicationform label.error, #create_form label.error, #login_form label.error{
+  color:red;
+  width: 99%;
+  display: inline-block;
+  background: transparent;
+  margin-top: 0px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#applicationform input.error, #clientapplicationform input.error, #create_form input.error,  #login_form input.error{
+  border: 1px solid red;
+}
+
+#applicationform textarea.error, #clientapplicationform textarea.error, #create_form textarea.error,  #login_form textarea.error{
+  border: 1px solid red;
+}
+
+#submit{
+  margin-left: 205px;
+}
+
+#success, #failure, #success2, #failure2{
+  display: none;
+}
+
+#success span, #failure span, #success2 span, #failure2 span{
+  display: block;
+  width: 100%;
+}
+
+.basic-grey label{
+  display: block;
+  margin: 0px;
+}
+
+.basic-grey label>span{
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 5px;
+  background: transparent;
+  line-height: 42px;
+}
+
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="password"], .basic-grey textarea, .basic-grey select, #terms{
+  display: inline-block;
+  border: 1px solid #DADADA;
+  color: #002147;
+  height: 40px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  outline: 0 none;
+  padding-left: 10px;
+  width: -moz-calc(100% - 220px);
+  width: -webkit-calc(100% - 220px);
+  width: -o-calc(100% - 220px);
+  width: calc(100% - 220px);
+  font: 300 normal 1em 'Open Sans', sans-serif;
+  line-height: 25px;
+  vertical-align: top;
+}
+
+#login_form input[type="password"], #login_form input[type="email"]{
+  width: -moz-calc(100% - 120px);
+  width: -webkit-calc(100% - 120px);
+  width: -o-calc(100% - 120px);
+  width: calc(100% - 120px);
+}
+
+#forgot_form input[type="text"]{
+  width: -moz-calc(100% - 20px);
+  width: -webkit-calc(100% - 20px);
+  width: -o-calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#terms{
+  width: 40px;
+}
+
+.basic-grey textarea{
+  padding: 8px 3px 3px 10px;
+}
+
+.basic-grey select{
+  background: #FFF;
+  /*appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;*/
+  text-indent: -1px;
+  text-overflow: '';
+  width: -moz-calc(100% - 208px);
+  width: -webkit-calc(100% - 208px);
+  width: -o-calc(100% - 208px);
+  width: calc(100% - 208px);
+  height: 40px;
+  line-height: 25px;
+}
+
+.basic-grey textarea{
+  height: 100px;
+}
+
+.basic-grey .button{
+  background: #002147;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  width: 25%;
+  margin-top: 20px;
+  cursor: pointer;
+  font: 300 normal 1.1em 'Open Sans', sans-serif;
+}
+
+#forgot_form .button{
+  width: 50%;
+}
+
+.basic-grey .button:hover {
+  color: #B8E6E6;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 99.5%; 
+  border-collapse: collapse;
+}
+
+th { 
+  background: #FFF; 
+  color: #002147; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center;
+  color: #002147; 
+  height: auto;
+}
+
+td {
+  width: 15%;
+}
+
+#terms_table{
+  display: inline-block;
+  width: -moz-calc(100% - 220px);
+  width: -webkit-calc(100% - 220px);
+  width: -o-calc(100% - 220px);
+  width: calc(100% - 220px);
+  margin-top: 20px;
+  vertical-align: top;
+}
+
+#terms_table tr{
+  height: 40px;
+}
+
+#terms_table td{
+  width: 80%;
+  border: 0px;
+}
+
+#terms_table td p{
+  line-height: 25px;
+  font: 300 normal 1.2em 'Open Sans', sans-serif;
+}
+
+#subject, #subject1, #subject2, #subject3, #subject4, #subject5{
+  border: 1px solid #ccc;
+  background: #FFF;
+  /*text-indent: 0.01px;
+  text-overflow: '';*/
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar{
+  display: inline-block;
+  width: 250px;
+  background: transparent;
+  margin-left: 0px;
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+#maincontent{
+  padding-top: 60px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+
+#sidecontent, #sidecontenttutor, #sidecontentcontact{
+  display: inline-block;
+  width: -moz-calc(100% - 250px);
+  width: -webkit-calc(100% - 250px);
+  width: -o-calc(100% - 250px);
+  width: calc(100% - 250px);
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+#sidecontent h1
+{ font: 400 normal 3em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;}
+
+#sidecontent h2
+{ font: 300 normal 2em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;
+  margin-bottom: 0px;}
+
+#sidecontent h6
+{ font: 300 italic 1.2em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: left;}
+
+#sidecontent p
+{ font: 300 normal 1.5em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: justfy;}
+
+#application_form p, #client_application_form{
+  font-size: 1em;
+}
+
+ul#sidemenu
+{ margin:0;}
+
+ul#sidemenu li
+{ padding: 0;
+  list-style: none;
+  margin: 0;
+  display: inline;
+  background: transparent;}
+
+ul#sidemenu li a
+{ font: 160% Century, Times New Roman, Georgia, Serif;
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: calc(100% - 10px);
+  height: 50px;
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  background: url(../images/sidebutton.png);
+  text-align: left;
+  color: #002147;
+  text-decoration: none;
+  line-height: 50px;
+  vertical-align: center;
+  cursor: pointer;
+  display:inline-block;}
+
+ul#sidemenu li.current > a
+{ background-position: 0px -50px;}
+  
+ul#sidemenu li:hover > a
+{ color: #FFF;
+  background: #002147;}
+
+/*About and Meet the team text*/
+/*Home page and about us page*/
+#hometitle
+{
+  width: 90%;
+  margin: 10px 5%;
+}
+
+#hometitle h1
+{
+  display: inline-block;
+  width: 100%;
+  font: 400 normal 3em 'Open Sans', sans-serif;
+  color: #002147;
+  text-align: center;
+  background: transparent;
+}
+
+.about
+{ display: inline-block;
+  vertical-align:top;
+  width: 41%;
+  margin: 0px 4% 20px 5%;
+  background: transparent;}
+
+.about_right
+{
+  display: inline-block;
+  margin: 0px 5% 20px 4%;
+}
+
+.aboutus, .meet, .values, .whyarlen, .faqs
+{
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile{
+  /*display: inline-block;*/
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  background: transparent;
+  overflow:hidden;
+  cursor: pointer;
+  border-bottom: thin solid #002147;
+}
+
+.photo > img{
+  display: none;
+}
+
+.introduction, .prep, .gcse, .alevel, .university
+{
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.tutorapp, .enquiry
+{
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#contacts{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+#mapcontainer{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+#contacts p{
+  font-size: 1.5em;
+}
+
+#contacts a{
+  margin-bottom: 20px;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+.homephotoscontainer{
+  display: inline-block;
+  vertical-align: top;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  height: auto;
+  background: transparent;
+}
+
+.homephotowrapper{
+  display: inline-block;
+  width: 30%;
+  margin: 0%;
+  height: auto;
+  background: transparent;
+}
+
+.homephotowrapper_center{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.homephotowrapper a{
+  font: normal 1.8em Century, Times New Roman, Georgia, Serif;
+  color: #002147;
+  background:transparent;
+  text-align: center;
+  width: 100%;
+}
+
+/*Meet the team photos*/
+#photos_container
+{
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.photo
+{
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  float: left;
+  margin-bottom: 0px;
+  margin-left: 0%;
+  margin-right: 10px;
+}
+
+.kieron{
+  background: url(../images/Keiron.png);
+  background-size: 200%;
+  background-position: -200px 0px;
+}
+
+.kieron:hover{
+  background-position: 0px 0px;
+}
+
+.ben{
+  background: url(../images/Ben.png);
+  background-size: 200%;
+  background-position: -200px 0px;
+}
+
+.ben:hover{
+  background-position: 0px 0px;
+}
+
+.svend{
+  background: url(../images/Svend2.png);
+  background-position: -200px 0px;
+}
+
+.svend:hover{
+  background-position: 0px 0px;
+}
+
+.text
+{
+  display: inline-block;
+  width: -moz-calc(100% - 210px);
+  width: -webkit-calc(100% - 210px);
+  width: -o-calc(100% - 210px);
+  width: calc(100% - 210px);
+  margin-left: 0px;
+  margin-right: 0px;
+  height: auto;
+  overflow: hidden;
+  /*border-bottom: thin solid #002147;*/
+}
+
+.text .extra
+{
+  display: none;
+}
+
+#testimage{
+  width: 200px;
+  height: 300px;
+  right: 0px;
+  top: 0px;
+  overflow: hidden;
+  background: #DE4363;
+}
+
+/*Login Form*/
+#login_form a
+{
+  font: 400 normal 1.5em 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+/*#login_form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding: 25px 15px 25px 10px;
+  font: 400 normal 1.5em 'Open Sans', sans-serif;
+  color: #002147;
+  border: 1px solid #000;
+}
+
+#login_form label{
+  display: block;
+  margin: 0px;
+}
+
+#login_form label>span{
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+#login_form input[type="text"], #login_form input[type="password"]{
+  border: 1px solid #DADADA;
+  color: #002147;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 0px;
+  outline: 0 none;
+  padding: 0px 3px 0px 5px;
+  width: 70%;
+  font: 300 normal 1em 'Open Sans', sans-serif;
+  color: #002147;
+}
+
+#login_form .button{
+  background: #002147;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20px;
+  cursor: pointer;
+  font: 300 normal 1.2em 'Open Sans', sans-serif;
+}
+
+#login_form .button:hover {
+  color: #B8E6E6;
+}*/
+
+/*Footer*/
+#footer
+{
+  width: 100%;
+  height: auto;
+  /*background: #002147;*/
+  background: url(../images/background.png);
+  margin: 0px;
+}
+
+#footercontainer{
+  width: 1200px;
+  overflow: hidden;
+  background: transparent;
+  padding-bottom: 20px;
+}
+
+#footercontainer p, h1, h2{
+  color: #FFF;
+  font: 300 normal 1.2em 'Open Sans', sans-serif;
+  padding-bottom: 0px;
+  background: transparent;
+  margin-top: -2px;
+}
+
+#footercontainer h1{
+  font: 2.2em Century, Times New Roman, Georgia, Serif;
+  margin-top: -5px;
+  padding-bottom: 0px;
+}
+
+#footercontainer h2{
+  font: 300 normal 1.4em 'Open Sans', sans-serif;
+}
+
+.footersection{
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  height: auto;
+  margin: 20px 5% 0px 5%;
+  background: transparent;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.footersection_right{
+  text-align: right;
+  width: 40%;
+  height: auto;
+  padding: 0px 0%;
+  padding-top: 8px;
+  background-color: rgba(0,0,0,0.2);
+  background: transparent;
+}
+
+.footersection_right p{
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.footerbuttons{
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  background: transparent;
+}
+
+#facebook{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../images/FacebookSmall.png);
+  background-position: -40px 0px;
+  background-size: 200% 40px;
+  cursor: pointer;
+}
+
+#facebook:hover{
+  background-position: 1px 0px;
+}
+
+#googleplus{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  background: url(../images/GooglePlusSmall.png);
+  background-position: -40px 0px;
+  background-size: 200% 40px;
+  cursor: pointer;
+}
+
+#googleplus:hover{
+  background-position: 0px 0px;
+}
+
+#linkedin{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  background: url(../images/LinkedInSmall.png);
+  background-position: -40px 0px;
+  background-size: 200% 40px;
+  cursor: pointer;
+}
+
+#linkedin:hover{
+  background-position: 0px 0px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1200px){
+  	#mainfrontcontent{
+ 	  width: 100%;
+ 	  margin-left: auto;
+ 	  margin-right: auto;
+ 	  overflow: hidden;
+ 	}
+
+ 	#footercontainer{
+      width: auto;
+      margin-left: 0px;
+      margin-right: 0px;
+      overflow: hidden;
+      background: transparent;
+    }
+ }
+
+@media screen and (max-width: 1240px){
+	#frontimagecontainer, #maincontent{
+	  width:auto;
+	  margin-left: 20px;
+	  margin-right: 20px;
+	  overflow: hidden;
+	}
+}
+
+
+@media screen and (max-width: 1100px){
+	#contacts{
+	  width: 100%;
+	  height: auto;
+	  margin-left: 0px;
+	}
+	
+	#client_application_form{
+	  width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px){
+  #sidebar{
+	  display: inline-block;
+	  width: 100%;
+	  margin-bottom: 10px;
+	}
+	
+	ul#sidemenu li a{
+	  text-align: center
+	}
+	
+	#sidecontent{
+  		display: inline-block;
+  		width: 100%;
+  		margin-left: auto;
+  		margin-right: auto;
+  		background: #FFF;
+  		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	#menubar{
+      display: none;
+	}
+	
+	#menubutton{
+	  display: block;
+	}
+	
+	.homephotowrapper{
+	  width:100%;
+	  margin: 10px 0px;
+	}
+
+	.about{
+	  width: 90%;
+	  margin: 10px 5%;
+	}
+
+	#slideshowcontainer{
+      margin-top: 50px;}
+	
+	#footercontainer{
+	  margin-left: 20px;
+	  margin-right: 20px;
+	}
+	
+	.footersection{
+  		width: 100%;
+  		margin-left: 0px;
+  		margin-right: 0px;
+  		background: transparent;
+	}
+	
+	.footersection_right p{
+	  text-align: left;
+	}
+	
+	#dropdown{
+  		width: 100%;
+  		display: inline-block;
+  		background: rgba(0,33,71,0.9);
+  		position: relative;
+  		top: 50px;
+  		right: 0px;
+  		z-index: 100;
+  		padding-bottom: 0px;
+  		padding-top: 0px;
+	}
+	
+	ul#dropmenu li a
+	{ font: 1.5em Century, Times New Roman, Georgia, Serif;;
+  	  height: 50px;
+  	  width: 100%;
+  	  margin: 0px 0 5px 0px;
+  	  padding: 0px 0px 0px 0px;
+  	  /*background: url(../images/sidebutton.png);*/
+  	  line-height: 50px;}
+}
+
+@media screen and (max-width: 600px){
+	#photos_container
+	{
+	  margin-left: 20px;
+	  margin-right: 20px;
+	  padding-left: 0px;
+	  padding-right: 0px;
+	}
+}
